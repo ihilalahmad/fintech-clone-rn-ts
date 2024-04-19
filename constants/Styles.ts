@@ -58,4 +58,20 @@ export const defaultStyles = StyleSheet.create({
     borderRadius: 16,
     gap: 20,
   },
+  inputContainer: {
+    marginVertical: 40,
+    flexDirection: 'row',
+  },
+  input: {
+    backgroundColor: Colors.lightGray,
+    padding: 20,
+    borderRadius: 16,
+    fontSize: 20,
+    marginRight: 10,
+  },
+  divider: {
+    flex: 1,
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: Colors.gray,
+  },
 });

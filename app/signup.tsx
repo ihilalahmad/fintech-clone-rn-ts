@@ -30,15 +30,15 @@ const Page = () => {
           Enter you phone number. We will send you a confirmation code there
         </Text>
 
-        <View style={styles.inputContainer}>
+        <View style={defaultStyles.inputContainer}>
           <TextInput
-            style={styles.input}
+            style={defaultStyles.input}
             placeholder='Country code'
             placeholderTextColor={Colors.gray}
             value={countryCode}
           />
           <TextInput
-            style={[styles.input, { flex: 1 }]}
+            style={[defaultStyles.input, { flex: 1 }]}
             placeholder='Mobile number'
             placeholderTextColor={Colors.gray}
             keyboardType='numeric'
@@ -72,17 +72,6 @@ const Page = () => {
   );
 };
 const styles = StyleSheet.create({
-  inputContainer: {
-    marginVertical: 40,
-    flexDirection: 'row',
-  },
-  input: {
-    backgroundColor: Colors.lightGray,
-    padding: 20,
-    borderRadius: 16,
-    fontSize: 20,
-    marginRight: 10,
-  },
   enabled: {
     backgroundColor: Colors.primary,
   },
