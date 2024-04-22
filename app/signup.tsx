@@ -6,18 +6,45 @@ import {
   TouchableOpacity,
   KeyboardAvoidingView,
   Platform,
+  Alert,
 } from 'react-native';
 import React, { useState } from 'react';
 import { defaultStyles } from '@/constants/Styles';
 import Colors from '@/constants/Colors';
-import { Link } from 'expo-router';
+import { Link, useRouter } from 'expo-router';
+import { isClerkAPIResponseError, useSignUp } from '@clerk/clerk-expo';
 
 const Page = () => {
-  const [countryCode, setCountryCode] = useState('+92');
+  const [countryCode, setCountryCode] = useState('+1');
   const [phoneNumber, setPhoneNumber] = useState('');
   const keyboardVerticalOffset = Platform.OS === 'ios' ? 80 : 0;
 
-  const onSignup = async () => {};
+  const router = useRouter();
+  const { signUp } = useSignUp();
+
+  const onSignup = async () => {
+    const fullPhoneNumber = `${countryCode}${phoneNumber}`;
+    // const fullPhoneNumber = `${countryCode}6464081541`;
+
+    try {
+      await signUp!.create({
+        phoneNumber: fullPhoneNumber,
+      });
+      signUp!.preparePhoneNumberVerification();
+      router.push({
+        pathname: 'verify/[phone]',
+        params: { phone: fullPhoneNumber },
+      } as never);
+    } catch (error) {
+      console.error('Error signing in:', JSON.stringify(error, null, 2));
+      if (isClerkAPIResponseError(error)) {
+        if (error.errors[0].code === 'form_identifier_not_found') {
+          Alert.alert('Error', error.errors[0].message);
+        }
+      }
+    }
+  };
+
   return (
     <KeyboardAvoidingView
       style={{ flex: 1 }}
