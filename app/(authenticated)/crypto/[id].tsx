@@ -6,7 +6,7 @@ const Page = () => {
   const { id } = useLocalSearchParams();
   return (
     <View>
-      <Text>Crypto Details</Text>
+      <Text>Crypto Details updated</Text>
     </View>
   );
 };
