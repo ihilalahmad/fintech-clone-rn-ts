@@ -87,6 +87,7 @@ const InitialLayout = () => {
   return (
     <Stack>
       <Stack.Screen name='index' options={{ headerShown: false }} />
+
       <Stack.Screen
         name='signup'
         options={{
@@ -151,6 +152,7 @@ const InitialLayout = () => {
         name='(authenticated)/(tabs)'
         options={{ headerShown: false }}
       />
+
       <Stack.Screen
         name='(authenticated)/crypto/[id]'
         options={{
