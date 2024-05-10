@@ -3,18 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03DCF95CFC6E4FFBAB2269B5 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512FD5045DB84E43B4B57F89 /* noop-file.swift */; };
+		0620FC3E36AF443F9C0B2D2E /* vivid-Icon-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDED30E154A4E93FA5DD3 /* vivid-Icon-60x60@2x.png */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		4DC0C38DC63A47DAB7272D44 /* dark-Icon-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7FD30F646524B7E97ABCFB4 /* dark-Icon-60x60@3x.png */; };
+		8052EB8AA98F42C5A860074E /* default-Icon-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BB4F35B966E4E15ADF98D70 /* default-Icon-60x60@3x.png */; };
+		928DB03B774C43488B567B81 /* dark-Icon-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C2F42047EBD4C85950646A3 /* dark-Icon-60x60@2x.png */; };
 		96905EF65AED1B983A6B3ABC /* libPods-fintechapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-fintechapp.a */; };
+		AE6EC6CAAD7C49958D6A8D40 /* vivid-Icon-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D601BD1A41E38A6D8C47 /* vivid-Icon-60x60@3x.png */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		C4A6EA067CB94A2991244123 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302DE6836BE84B57B74B5F0B /* noop-file.swift */; };
+		D2C650DC237445C58B05DB06 /* default-Icon-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8BACDB3B2C64E8D9893979F /* default-Icon-60x60@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,15 +30,21 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = fintechapp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = fintechapp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = fintechapp/main.m; sourceTree = "<group>"; };
-		302DE6836BE84B57B74B5F0B /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "fintechapp/noop-file.swift"; sourceTree = "<group>"; };
+		1BB4F35B966E4E15ADF98D70 /* default-Icon-60x60@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "default-Icon-60x60@3x.png"; path = "fintechapp/DynamicAppIcons/default-Icon-60x60@3x.png"; sourceTree = "<group>"; };
+		3B4FDED30E154A4E93FA5DD3 /* vivid-Icon-60x60@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "vivid-Icon-60x60@2x.png"; path = "fintechapp/DynamicAppIcons/vivid-Icon-60x60@2x.png"; sourceTree = "<group>"; };
+		3C2F42047EBD4C85950646A3 /* dark-Icon-60x60@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "dark-Icon-60x60@2x.png"; path = "fintechapp/DynamicAppIcons/dark-Icon-60x60@2x.png"; sourceTree = "<group>"; };
+		512FD5045DB84E43B4B57F89 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "fintechapp/noop-file.swift"; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-fintechapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fintechapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2E3173556A471DD304B334 /* Pods-fintechapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fintechapp.debug.xcconfig"; path = "Target Support Files/Pods-fintechapp/Pods-fintechapp.debug.xcconfig"; sourceTree = "<group>"; };
-		6F1E6BA31CFF47B28F556E20 /* fintechapp-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "fintechapp-Bridging-Header.h"; path = "fintechapp/fintechapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-fintechapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fintechapp.release.xcconfig"; path = "Target Support Files/Pods-fintechapp/Pods-fintechapp.release.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = fintechapp/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		C7FD30F646524B7E97ABCFB4 /* dark-Icon-60x60@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "dark-Icon-60x60@3x.png"; path = "fintechapp/DynamicAppIcons/dark-Icon-60x60@3x.png"; sourceTree = "<group>"; };
+		C8BACDB3B2C64E8D9893979F /* default-Icon-60x60@2x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "default-Icon-60x60@2x.png"; path = "fintechapp/DynamicAppIcons/default-Icon-60x60@2x.png"; sourceTree = "<group>"; };
+		CD03D601BD1A41E38A6D8C47 /* vivid-Icon-60x60@3x.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "vivid-Icon-60x60@3x.png"; path = "fintechapp/DynamicAppIcons/vivid-Icon-60x60@3x.png"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-fintechapp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		FB65B81609524DDC90FF7CA6 /* fintechapp-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "fintechapp-Bridging-Header.h"; path = "fintechapp/fintechapp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +69,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				302DE6836BE84B57B74B5F0B /* noop-file.swift */,
-				6F1E6BA31CFF47B28F556E20 /* fintechapp-Bridging-Header.h */,
+				512FD5045DB84E43B4B57F89 /* noop-file.swift */,
+				FB65B81609524DDC90FF7CA6 /* fintechapp-Bridging-Header.h */,
+				FD9F6F9AAEAC4CDC8467421D /* DynamicAppIcons */,
 			);
 			name = fintechapp;
 			sourceTree = "<group>";
@@ -136,6 +149,20 @@
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
+		FD9F6F9AAEAC4CDC8467421D /* DynamicAppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				C8BACDB3B2C64E8D9893979F /* default-Icon-60x60@2x.png */,
+				1BB4F35B966E4E15ADF98D70 /* default-Icon-60x60@3x.png */,
+				3C2F42047EBD4C85950646A3 /* dark-Icon-60x60@2x.png */,
+				C7FD30F646524B7E97ABCFB4 /* dark-Icon-60x60@3x.png */,
+				3B4FDED30E154A4E93FA5DD3 /* vivid-Icon-60x60@2x.png */,
+				CD03D601BD1A41E38A6D8C47 /* vivid-Icon-60x60@3x.png */,
+			);
+			name = DynamicAppIcons;
+			path = "";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,13 +171,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "fintechapp" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				9317D8668890065F9A47050F /* [Expo] Configure project */,
+				E29EDADE1346A2B038ADFAB8 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				A9E185148CC98480A3406848 /* [CP] Embed Pods Frameworks */,
+				A907537DF4E7367E6307EB2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +227,12 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				D2C650DC237445C58B05DB06 /* default-Icon-60x60@2x.png in Resources */,
+				8052EB8AA98F42C5A860074E /* default-Icon-60x60@3x.png in Resources */,
+				928DB03B774C43488B567B81 /* dark-Icon-60x60@2x.png in Resources */,
+				4DC0C38DC63A47DAB7272D44 /* dark-Icon-60x60@3x.png in Resources */,
+				0620FC3E36AF443F9C0B2D2E /* vivid-Icon-60x60@2x.png in Resources */,
+				AE6EC6CAAD7C49958D6A8D40 /* vivid-Icon-60x60@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +308,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fintechapp/Pods-fintechapp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9317D8668890065F9A47050F /* [Expo] Configure project */ = {
+		A907537DF4E7367E6307EB2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fintechapp/Pods-fintechapp-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fintechapp/Pods-fintechapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E29EDADE1346A2B038ADFAB8 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -294,24 +345,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-fintechapp/expo-configure-project.sh\"\n";
 		};
-		A9E185148CC98480A3406848 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-fintechapp/Pods-fintechapp-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fintechapp/Pods-fintechapp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -322,7 +355,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
-				C4A6EA067CB94A2991244123 /* noop-file.swift in Sources */,
+				03DCF95CFC6E4FFBAB2269B5 /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +370,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = fintechapp/fintechapp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P7BZ9H2P76;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -345,10 +377,7 @@
 				);
 				INFOPLIST_FILE = fintechapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -374,13 +403,9 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = fintechapp/fintechapp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P7BZ9H2P76;
 				INFOPLIST_FILE = fintechapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -446,10 +471,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					/usr/lib/swift,
-					"$(inherited)",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -507,10 +529,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					/usr/lib/swift,
-					"$(inherited)",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "$(inherited)";

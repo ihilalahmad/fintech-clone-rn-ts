@@ -28,6 +28,7 @@ import { TextInput } from 'react-native-gesture-handler';
 
 const categories = ['Overview', 'News', 'Orders', 'Transactions'];
 
+Animated.addWhitelistedNativeProps({ text: true });
 const AnimatedTextInput = Animated.createAnimatedComponent(TextInput);
 
 function ToolTip({ x, y }: { x: SharedValue<number>; y: SharedValue<number> }) {
@@ -62,7 +63,7 @@ const Page = () => {
 
   const animatedText = useAnimatedProps(() => {
     return {
-      text: `${state.y.price.value.value.toFixed(2)} €`,
+      text: `${state.y.price.value.value.toFixed(2)} $`,
       defaultValue: '',
     };
   });
@@ -214,9 +215,7 @@ const Page = () => {
                           color: Colors.dark,
                         }}
                         animatedProps={animatedText}
-                      >
-                        Testing
-                      </AnimatedTextInput>
+                      ></AnimatedTextInput>
                       <AnimatedTextInput
                         editable={false}
                         underlineColorAndroid={'transparent'}

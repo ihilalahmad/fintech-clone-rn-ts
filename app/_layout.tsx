@@ -11,6 +11,7 @@ import { TouchableOpacity, Text, View, ActivityIndicator } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as SecureStore from 'expo-secure-store';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { UserInactivityProvider } from '@/context/UserInactivity';
 
 const CLERK_PUBLISHABLE_KEY = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
@@ -71,6 +72,7 @@ const InitialLayout = () => {
 
     if (isSignedIn && !isAuthGroup) {
       router.replace('/(authenticated)/(tabs)/home');
+      // router.replace('/(authenticated)/(modals)/lock');
     } else if (!isSignedIn) {
       router.replace('/');
     }
@@ -180,6 +182,24 @@ const InitialLayout = () => {
           ),
         }}
       />
+      <Stack.Screen
+        name='(authenticated)/(modals)/lock'
+        options={{ headerShown: false, animation: 'none' }}
+      />
+      <Stack.Screen
+        name='(authenticated)/(modals)/account'
+        options={{
+          presentation: 'transparentModal',
+          animation: 'fade',
+          title: '',
+          headerTransparent: true,
+          headerLeft: () => (
+            <TouchableOpacity onPress={router.back}>
+              <Ionicons name='close-outline' size={34} color={'#fff'} />
+            </TouchableOpacity>
+          ),
+        }}
+      />
     </Stack>
   );
 };
@@ -191,10 +211,12 @@ const RootLayoutNav = () => {
       tokenCache={tokenCache}
     >
       <QueryClientProvider client={queryClient}>
-        <GestureHandlerRootView style={{ flex: 1 }}>
-          <StatusBar style='light' />
-          <InitialLayout />
-        </GestureHandlerRootView>
+        <UserInactivityProvider>
+          <GestureHandlerRootView style={{ flex: 1 }}>
+            <StatusBar style='light' />
+            <InitialLayout />
+          </GestureHandlerRootView>
+        </UserInactivityProvider>
       </QueryClientProvider>
     </ClerkProvider>
   );

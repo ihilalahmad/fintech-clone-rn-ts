@@ -1,6 +1,14 @@
 interface RootObject {
-  Code: string;
-  Name: string;
-  RelatedCityName: string;
-  RelatedCityCode: string;
+  countryCode: string;
+  countryName: string;
+  cityCode: string;
+  cityName: string;
+  airports: Airport[];
+}
+
+interface Airport {
+  airportCode: string;
+  airportName: string;
+  latitude: number;
+  longitude: number;
 }
